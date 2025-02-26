@@ -1,0 +1,447 @@
+body {
+  position: static;
+  /* background-image: url(../images/Wireframe\ -\ 24.png); */
+  background-color: #f6f6f6;
+}
+body {
+  cursor: url(../images/Ellipse\ 10.png), auto;
+}
+/* 1 блок */
+.sec1 {
+  width: 100vw;
+  height: 63.158vw;
+  position: relative;
+}
+.stroiteli {
+  width: 100vw;
+  height: 63.158vw;
+  position: absolute;
+}
+.zagolovok {
+  font-family: 'DelaGothicOne';
+  font-size: 8.681vw;
+  color: #ff8400;
+  position: absolute;
+  left: 16vw;
+  top: 43vw;
+}
+.uverennoct {
+  font-family: 'DelaGothicOne';
+  font-size: 3.472vw;
+  color: #f6f6f6;
+  position: absolute;
+  left: 10vw;
+  top: 4.861vw;
+}
+.inzhiniring {
+  font-family: 'AA Stetica';
+  font-size: 2.083vw;
+  color: #f6f6f6;
+  position: absolute;
+  left: 36vw;
+  top: 54.5vw;
+}
+/* 2 блок */
+.sec2 {
+  width: 100vw;
+  height: 49.514vw;
+  position: relative;
+}
+.zdanie1 {
+  top: 3vw;
+  position: absolute;
+  width: 34.424vw;
+  height: 47.431vw;
+}
+.comp {
+  font-family: 'AA Stetica';
+  font-size: 4.861vw;
+  font-weight: bold;
+  color: #121e3c;
+  position: absolute;
+  top: 2.3vw;
+  left: 22vw;
+}
+.text1 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  line-height: 2.014vw;
+  top: 9vw;
+  left: 40vw;
+}
+.text2 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  line-height: 2.014vw;
+  top: 15vw;
+  left: 40vw;
+}
+.text3 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  line-height: 2.014vw;
+  top: 21vw;
+  left: 40vw;
+}
+.text4 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  line-height: 2.014vw;
+  top: 29vw;
+  left: 40vw;
+}
+.text5 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  line-height: 2.014vw;
+  top: 37vw;
+  left: 40vw;
+}
+/* 3 блок */
+.sec3 {
+  width: 100vw;
+  height: 56.528vw;
+  position: relative;
+  background-color: #ff8400;
+}
+.napr {
+  font-family: 'AA Stetica';
+  font-size: 4.861vw;
+  font-weight: bold;
+  color: #121e3c;
+  position: absolute;
+  top: 1vw;
+  left: 52vw;
+}
+.zdanie2 {
+  top: 7vw;
+  left: 3vw;
+  position: absolute;
+  width: 93.264vw;
+  height: 42.639vw;
+}
+.point1 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  top: 11.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point2 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  top: 15.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point3 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  top: 21.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point4 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  top: 25.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point5 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  top: 29.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point5 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  top: 29.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point6 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  top: 35.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point7 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  top: 41.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+/* 4 блок */
+.sec4 {
+  width: 100vw;
+  height: 67.431vw;
+  position: relative;
+}
+.kak {
+  font-family: 'AA Stetica';
+  font-size: 4.861vw;
+  font-weight: bold;
+  color: #121e3c;
+  position: absolute;
+  top: 2vw;
+  left: 24.5vw;
+}
+.strl {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+
+  color: #121e3c;
+}
+.strl1 {
+  position: absolute;
+  top: 11vw;
+  left: 2.16vw;
+}
+.strl2 {
+  position: absolute;
+  top: 11vw;
+  left: 41.16vw;
+}
+.strl3 {
+  position: absolute;
+  top: 19.5vw;
+  left: 69.16vw;
+}
+.strl4 {
+  position: absolute;
+  top: 18.5vw;
+  left: 2.16vw;
+  line-height: 2.014vw;
+}
+.strl5 {
+  position: absolute;
+  top: 30.5vw;
+  left: 10.16vw;
+}
+.strl6 {
+  position: absolute;
+  top: 30.5vw;
+  left: 69.5vw;
+}
+.strl7 {
+  position: absolute;
+  top: 39.5vw;
+  left: 50.5vw;
+  line-height: 2.014vw;
+}
+.strl8 {
+  position: absolute;
+  top: 40.5vw;
+  left: 5.5vw;
+}
+.strl9 {
+  position: absolute;
+  top: 50vw;
+  left: 13.5vw;
+}
+.strl10 {
+  position: absolute;
+  top: 50vw;
+  left: 55.5vw;
+}
+.strl11 {
+  position: absolute;
+  top: 60vw;
+  left: 60.5vw;
+}
+.strl12 {
+  position: absolute;
+  top: 60vw;
+  left: 3.5vw;
+}
+/* стрелочки положение  */
+.aka1 {
+  position: absolute;
+  top: 11vw;
+  left: 32.8vw;
+  width: 7.431vw;
+  height: 2.083vw;
+}
+.aka2 {
+  position: absolute;
+  top: 11.7vw;
+  left: 84.8vw;
+  width: 8.333vw;
+  height: 6.597vw;
+}
+.aka3 {
+  position: absolute;
+  top: 19.5vw;
+  left: 56.8vw;
+  rotate: 180deg;
+  width: 7.431vw;
+  height: 2.083vw;
+}
+.aka4 {
+  position: absolute;
+  top: 24.5vw;
+  left: 1.8vw;
+  rotate: 270deg;
+  transform: scaleX(-1);
+  width: 8.333vw;
+  height: 6.597vw;
+}
+.aka5 {
+  position: absolute;
+  top: 30vw;
+  left: 60.8vw;
+  width: 7.431vw;
+  height: 2.083vw;
+}
+.aka6 {
+  position: absolute;
+  top: 30.7vw;
+  left: 89.8vw;
+  width: 8.333vw;
+  height: 6.597vw;
+}
+.aka7 {
+  position: absolute;
+  top: 40vw;
+  left: 39.8vw;
+  rotate: 180deg;
+  width: 7.431vw;
+  height: 2.083vw;
+}
+.aka8 {
+  position: absolute;
+  top: 44.5vw;
+  left: 4.8vw;
+  rotate: 270deg;
+  transform: scaleX(-1);
+  width: 8.333vw;
+  height: 6.597vw;
+}
+.aka9 {
+  position: absolute;
+  top: 50vw;
+  left: 46.8vw;
+  width: 7.431vw;
+  height: 2.083vw;
+}
+.aka10 {
+  position: absolute;
+  top: 51vw;
+  left: 85.8vw;
+  width: 8.333vw;
+  height: 6.597vw;
+}
+.aka11 {
+  position: absolute;
+  top: 59.5vw;
+  left: 49.8vw;
+  rotate: 180deg;
+  width: 7.431vw;
+  height: 2.083vw;
+}
+/* 5 блок */
+.sec5 {
+  width: 100vw;
+  height: 61.944vw;
+  position: relative;
+}
+.zdanie3 {
+  top: 1vw;
+  position: absolute;
+  width: 37.292vw;
+  height: 61.944vw;
+}
+.posl {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  top: 2vw;
+  left: 18vw;
+  line-height: 2.014vw;
+}
+.poslb {
+  font-family: 'AA Stetica';
+  font-weight: bold;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  line-height: 2.014vw;
+}
+.doc1 {
+  position: absolute;
+  top: 16vw;
+  left: 39vw;
+  width: 27.778vw;
+  height: 38.889vw;
+}
+.doc2 {
+  position: absolute;
+  top: 22vw;
+  left: 69vw;
+  width: 27.778vw;
+  height: 38.889vw;
+}
+/* 6 блоооооооок */
+.sec6 {
+  width: 100vw;
+  height: 20.833vw;
+  position: relative;
+  background-color: #ff8400;
+}
+.contact {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #f6f6f6;
+  top: 1.5vw;
+  left: 1vw;
+  line-height: 2.014vw;
+}

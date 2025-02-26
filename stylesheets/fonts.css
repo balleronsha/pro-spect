@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'DelaGothicOne';
+  src: local('DelaGothicOne-Regular'), local('DelaGothicOne-Regular'),
+    url('../fonts/DelaGothicOne-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AA Stetica';
+  src: local('AA Stetica Regular'), local('AA Stetica Regular'),
+    url('../fonts/AA\ Stetica\ Regular.otf') format('opentype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AA Stetica';
+  src: local('AA Stetica Bold'), local('AA Stetica Bold'),
+    url('../fonts/AA\ Stetica\ Bold.otf') format('opentype');
+  font-weight: bold;
+}
