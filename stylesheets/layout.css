@@ -170,7 +170,7 @@ body {
 .text5 {
   animation-delay: 1s;
 }
-/* Стиль секции 3 */
+/* 3 блок */
 .sec3 {
   width: 100vw;
   height: 56.528vw;
@@ -287,109 +287,7 @@ body {
 .point7 {
   animation-delay: 1.4s;
 }
-/* 3 блок */
-/* .sec3 {
-  width: 100vw;
-  height: 56.528vw;
-  position: relative;
-  background-color: #ff8400;
-}
-.napr {
-  font-family: 'AA Stetica';
-  font-size: 4.861vw;
-  font-weight: bold;
-  color: #121e3c;
-  position: absolute;
-  top: 1vw;
-  left: 52vw;
-}
-.zdanie2 {
-  top: 7vw;
-  left: 3vw;
-  position: absolute;
-  width: 93.264vw;
-  height: 42.639vw;
-}
-.point1 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  top: 11.5vw;
-  left: 6.43vw;
-  line-height: 2.014vw;
-}
-.point2 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  top: 15.5vw;
-  left: 6.43vw;
-  line-height: 2.014vw;
-}
-.point3 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  top: 21.5vw;
-  left: 6.43vw;
-  line-height: 2.014vw;
-}
-.point4 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  top: 25.5vw;
-  left: 6.43vw;
-  line-height: 2.014vw;
-}
-.point5 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  top: 29.5vw;
-  left: 6.43vw;
-  line-height: 2.014vw;
-}
-.point5 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  top: 29.5vw;
-  left: 6.43vw;
-  line-height: 2.014vw;
-}
-.point6 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  top: 35.5vw;
-  left: 6.43vw;
-  line-height: 2.014vw;
-}
-.point7 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  top: 41.5vw;
-  left: 6.43vw;
-  line-height: 2.014vw;
-} */
+
 /* 4 блок */
 .sec4 {
   width: 100vw;
@@ -474,7 +372,7 @@ body {
   top: 60vw;
   left: 3.5vw;
 }
-/* стрелочки положение  */
+
 .aka1 {
   position: absolute;
   top: 11vw;
@@ -501,10 +399,8 @@ body {
   position: absolute;
   top: 24.5vw;
   left: 1.8vw;
-  rotate: 270deg;
-  transform: scaleX(-1);
-  width: 8.333vw;
-  height: 6.597vw;
+  height: 8.333vw;
+  width: 6.597vw;
 }
 .aka5 {
   position: absolute;
@@ -532,10 +428,8 @@ body {
   position: absolute;
   top: 44.5vw;
   left: 4.8vw;
-  rotate: 270deg;
-  transform: scaleX(-1);
-  width: 8.333vw;
-  height: 6.597vw;
+  height: 8.333vw;
+  width: 6.597vw;
 }
 .aka9 {
   position: absolute;
@@ -558,6 +452,126 @@ body {
   rotate: 180deg;
   width: 7.431vw;
   height: 2.083vw;
+}
+/* Общая анимация для всех элементов */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(
+      20px
+    ); /* Элементы начинают с небольшого смещения вниз */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Элементы возвращаются на свое место */
+  }
+}
+
+/* Начальные состояния элементов - скрыты */
+.strl1,
+.strl2,
+.strl3,
+.strl4,
+.strl5,
+.strl6,
+.strl7,
+.strl8,
+.strl9,
+.strl10,
+.strl11,
+.strl12,
+.aka1,
+.aka2,
+.aka3,
+.aka4,
+.aka5,
+.aka6,
+.aka7,
+.aka8,
+.aka9,
+.aka10,
+.aka11 {
+  opacity: 0;
+  transform: translateY(20px); /* Элементы начинают с небольшого смещения */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Плавная анимация */
+}
+
+/* Когда элемент становится видимым - запускаем анимацию */
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Позиция возвращается к нормальной */
+}
+
+/* Задержки для каждого элемента, когда он становится видимым (прибавлено 0.5 сек.) */
+.strl1.visible {
+  animation-delay: 0s;
+}
+.aka1.visible {
+  animation-delay: 0.5s;
+}
+.strl2.visible {
+  animation-delay: 1s;
+}
+.aka2.visible {
+  animation-delay: 1.5s;
+}
+.strl3.visible {
+  animation-delay: 2s;
+}
+.aka3.visible {
+  animation-delay: 2.5s;
+}
+.strl4.visible {
+  animation-delay: 3s;
+}
+.aka4.visible {
+  animation-delay: 3.5s;
+}
+.strl5.visible {
+  animation-delay: 4s;
+}
+.aka5.visible {
+  animation-delay: 4.5s;
+}
+.strl6.visible {
+  animation-delay: 5s;
+}
+.aka6.visible {
+  animation-delay: 5.5s;
+}
+.strl7.visible {
+  animation-delay: 6s;
+}
+.aka7.visible {
+  animation-delay: 6.5s;
+}
+.strl8.visible {
+  animation-delay: 7s;
+}
+.aka8.visible {
+  animation-delay: 7.5s;
+}
+.strl9.visible {
+  animation-delay: 8s;
+}
+.aka9.visible {
+  animation-delay: 8.5s;
+}
+.strl10.visible {
+  animation-delay: 9s;
+}
+.aka10.visible {
+  animation-delay: 9.5s;
+}
+.strl11.visible {
+  animation-delay: 10s;
+}
+.aka11.visible {
+  animation-delay: 10.5s;
+}
+
+.strl12.visible {
+  animation-delay: 11s;
 }
 /* 5 блок */
 .sec5 {
@@ -602,6 +616,16 @@ body {
   left: 69vw;
   width: 27.778vw;
   height: 38.889vw;
+}
+.posl {
+  opacity: 0;
+  transform: translateY(20px); /* Элементы начинают с небольшого смещения */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Плавная анимация */
+}
+
+.posl.visible {
+  opacity: 1;
+  transform: translateY(0); /* Позиция возвращается к нормальной */
 }
 /* 6 блоооооооок */
 .sec6 {

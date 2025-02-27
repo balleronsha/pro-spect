@@ -15,10 +15,10 @@ window.addEventListener('scroll', function () {
     // Применяем класс visible для изображения и текста
     zdanie1.classList.add('visible');
     textElements.forEach((element, index) => {
-      // Для каждого элемента добавляем класс visible с задержкой
+      // Для каждого элемента добавляем класс visible с задержкой 0.3 сек
       setTimeout(() => {
         element.classList.add('visible');
-      }, index * 200); // Задержка для каждого элемента
+      }, index * 500); // Задержка 0.3 сек для каждого элемента
     });
   }
 });
@@ -42,11 +42,61 @@ window.addEventListener('scroll', function () {
     zdanie2.classList.add('visible');
     napr.classList.add('visible');
 
-    // Применяем анимацию для всех пунктов с задержкой
+    // Применяем анимацию для всех пунктов с задержкой 0.3 сек
     pointElements.forEach((element, index) => {
       setTimeout(() => {
         element.classList.add('visible');
-      }, index * 200); // Задержка для каждого элемента
+      }, index * 700); // Задержка 0.3 сек для каждого элемента
     });
   }
 });
+// 4 секцияяяяяяяяя
+// Функция для отслеживания скролла
+window.addEventListener('scroll', function () {
+  const sec4 = document.querySelector('.sec4');
+  const strlElements = document.querySelectorAll(
+    '.strl1, .strl2, .strl3, .strl4, .strl5, .strl6, .strl7, .strl8, .strl9, .strl10, .strl11, .strl12'
+  );
+  const akaElements = document.querySelectorAll(
+    '.aka1, .aka2, .aka3, .aka4, .aka5, .aka6, .aka7, .aka8, .aka9, .aka10, .aka11'
+  );
+
+  // Проверяем, когда секция 4 попадает в область видимости
+  const sec4Top = sec4.getBoundingClientRect().top;
+  const sec4Height = sec4.offsetHeight;
+
+  if (sec4Top < window.innerHeight && sec4Top + sec4Height > 0) {
+    // Добавляем класс 'visible' для каждого элемента, чтобы анимация началась
+    strlElements.forEach((strl, index) => {
+      setTimeout(() => {
+        strl.classList.add('visible');
+      }, index * 500); // Задержка для каждого элемента
+    });
+
+    akaElements.forEach((aka, index) => {
+      setTimeout(() => {
+        aka.classList.add('visible');
+      }, index * 500); // Задержка для каждого элемента
+    });
+  }
+});
+// 5 секцииииииия
+// Создаем IntersectionObserver для отслеживания появления элемента в области видимости
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      // Если элемент вошел в область видимости
+      if (entry.isIntersecting) {
+        const posl = entry.target;
+        posl.classList.add('visible'); // Добавляем класс visible для анимации
+
+        observer.unobserve(posl); // Прекращаем наблюдение за этим элементом, чтобы анимация сработала только один раз
+      }
+    });
+  },
+  { threshold: 0.5 }
+); // Элемент должен быть хотя бы на 50% видимым
+
+// Наблюдаем за элементом
+const posl = document.querySelector('.posl');
+observer.observe(posl);
