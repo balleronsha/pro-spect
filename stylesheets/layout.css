@@ -2,15 +2,15 @@ body {
   position: static;
   /* background-image: url(../images/Wireframe\ -\ 24.png); */
   background-color: #f6f6f6;
-}
-body {
   cursor: url(../images/Ellipse\ 10.svg), auto;
 }
+
 /* 1 блок */
 .sec1 {
   width: 100vw;
   height: 63.158vw;
   position: relative;
+  background-color: #f6f6f6;
 }
 .stroiteli {
   width: 100vw;
@@ -41,67 +41,71 @@ body {
   left: 36vw;
   top: 54.5vw;
 }
+
+.sec1 {
+  width: 100vw;
+  height: 63.158vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.zagolovok,
+.inzhiniring,
+.uverennoct {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.zagolovok {
+  animation-delay: 0s;
+}
+
+.inzhiniring {
+  animation-delay: 0.5s;
+}
+
+.uverennoct {
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* 2 блок */
+/* Стиль секции 2 */
 .sec2 {
   width: 100vw;
   height: 49.514vw;
   position: relative;
+  overflow: hidden; /* Скроем элементы, выходящие за пределы */
 }
+
+/* Параллаксовый эффект для изображения */
 .zdanie1 {
-  top: 3vw;
   position: absolute;
+  top: 3vw;
+  left: 0;
   width: 34.424vw;
   height: 47.431vw;
+  opacity: 0;
+  transform: translateY(50px); /* Изначально смещено вниз */
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
-.comp {
-  font-family: 'AA Stetica';
-  font-size: 4.861vw;
-  font-weight: bold;
-  color: #121e3c;
-  position: absolute;
-  top: 2.3vw;
-  left: 22vw;
-}
-.text1 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  line-height: 2.014vw;
-  top: 9vw;
-  left: 40vw;
-}
-.text2 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  line-height: 2.014vw;
-  top: 15vw;
-  left: 40vw;
-}
-.text3 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  line-height: 2.014vw;
-  top: 21vw;
-  left: 40vw;
-}
-.text4 {
-  font-family: 'AA Stetica';
-  font-style: normal;
-  font-size: 1.736vw;
-  position: absolute;
-  color: #121e3c;
-  line-height: 2.014vw;
-  top: 29vw;
-  left: 40vw;
-}
+
+/* Элементы текста секции 2 */
+.comp,
+.text1,
+.text2,
+.text3,
+.text4,
 .text5 {
   font-family: 'AA Stetica';
   font-style: normal;
@@ -109,11 +113,182 @@ body {
   position: absolute;
   color: #121e3c;
   line-height: 2.014vw;
+  opacity: 0; /* Изначально невидимо */
+  transform: translateY(20px); /* Начальная позиция смещена вниз */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Плавный эффект */
+}
+
+/* Стиль для текста "О компании" */
+.comp {
+  top: 2.3vw;
+  left: 22vw;
+  font-weight: bold;
+  font-size: 4.861vw;
+}
+
+/* Тексты секции */
+.text1 {
+  top: 9vw;
+  left: 40vw;
+}
+.text2 {
+  top: 15vw;
+  left: 40vw;
+}
+.text3 {
+  top: 21vw;
+  left: 40vw;
+}
+.text4 {
+  top: 29vw;
+  left: 40vw;
+}
+.text5 {
   top: 37vw;
   left: 40vw;
 }
-/* 3 блок */
+
+/* Класс, который активируется при скролле */
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Возвращаем элементы в их исходную позицию */
+}
+
+/* Задержки для каждого текста */
+.text1 {
+  animation-delay: 0.2s;
+}
+.text2 {
+  animation-delay: 0.4s;
+}
+.text3 {
+  animation-delay: 0.6s;
+}
+.text4 {
+  animation-delay: 0.8s;
+}
+.text5 {
+  animation-delay: 1s;
+}
+/* Стиль секции 3 */
 .sec3 {
+  width: 100vw;
+  height: 56.528vw;
+  position: relative;
+  background-color: #ff8400;
+}
+
+/* Заголовок "НАПРАВЛЕНИЯ" */
+.napr {
+  font-family: 'AA Stetica';
+  font-size: 4.861vw;
+  font-weight: bold;
+  color: #121e3c;
+  position: absolute;
+  top: 1vw;
+  left: 52vw;
+  opacity: 0; /* Изначально скрыт */
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Изображение */
+.zdanie2 {
+  top: 7vw;
+  left: 3vw;
+  position: absolute;
+  width: 93.264vw;
+  height: 42.639vw;
+  opacity: 0;
+  transform: translateY(50px); /* Изначально смещено вниз */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Пункты с направлениями */
+.point1,
+.point2,
+.point3,
+.point4,
+.point5,
+.point6,
+.point7 {
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  opacity: 0; /* Изначально скрыт */
+  transform: translateY(20px); /* Начальная позиция */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Позиции для пунктов */
+.point1 {
+  top: 11.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point2 {
+  top: 15.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point3 {
+  top: 21.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point4 {
+  top: 25.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point5 {
+  top: 29.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point6 {
+  top: 35.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+.point7 {
+  top: 41.5vw;
+  left: 6.43vw;
+  line-height: 2.014vw;
+}
+
+/* Класс, который активирует анимацию */
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Позиция возвращается к нормальной */
+}
+
+/* Задержки для каждого элемента */
+.point1 {
+  animation-delay: 0.2s;
+}
+.point2 {
+  animation-delay: 0.4s;
+}
+.point3 {
+  animation-delay: 0.6s;
+}
+.point4 {
+  animation-delay: 0.8s;
+}
+.point5 {
+  animation-delay: 1s;
+}
+.point6 {
+  animation-delay: 1.2s;
+}
+.point7 {
+  animation-delay: 1.4s;
+}
+/* 3 блок */
+/* .sec3 {
   width: 100vw;
   height: 56.528vw;
   position: relative;
@@ -214,7 +389,7 @@ body {
   top: 41.5vw;
   left: 6.43vw;
   line-height: 2.014vw;
-}
+} */
 /* 4 блок */
 .sec4 {
   width: 100vw;
