@@ -573,6 +573,168 @@ body {
 .strl12.visible {
   animation-delay: 11s;
 }
+/* 7 БЛОК */
+.sec7 {
+  width: 100vw;
+  height: 103vw;
+  position: relative;
+  background-color: #f6f6f6;
+}
+.uslugi {
+  width: 100vw;
+  height: 107.569vw;
+  position: absolute;
+  z-index: 40;
+  opacity: 50%;
+}
+.chtooo {
+  width: 100vw;
+  height: 6.528vw;
+  background-color: #ff8400;
+  position: absolute;
+}
+
+.zagolovok7 {
+  top: 2.3vw;
+  left: 2.1vw;
+  font-family: 'AA Stetica';
+  font-weight: bold;
+  font-size: 4.861vw;
+  position: absolute;
+  color: #121e3c;
+  line-height: 2.014vw;
+  position: absolute;
+}
+.orange1,
+.orange2,
+.orange3,
+.orange4,
+.orange5,
+.orange6,
+.orange7,
+.orange8 {
+  left: 2.4vw;
+  font-family: 'AA Stetica';
+  font-weight: bold;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #ff8400;
+  line-height: 2.014vw;
+  position: absolute;
+}
+.orange1 {
+  top: 10.7vw;
+}
+.orange2 {
+  top: 21.9vw;
+}
+.orange3 {
+  top: 33.3vw;
+}
+.orange4 {
+  top: 44.6vw;
+}
+.orange5 {
+  top: 55.4vw;
+}
+.orange6 {
+  top: 67.2vw;
+}
+.orange7 {
+  top: 78.4vw;
+}
+.orange8 {
+  top: 89.8vw;
+}
+.osn1,
+.osn2,
+.osn3,
+.osn4,
+.osn5,
+.osn6,
+.osn7,
+.osn8 {
+  left: 2.4vw;
+  font-family: 'AA Stetica';
+  font-style: normal;
+  font-size: 1.736vw;
+  position: absolute;
+  color: #121e3c;
+  line-height: 2.014vw;
+}
+.osn1 {
+  top: 14.3vw;
+}
+.osn2 {
+  top: 25.7vw;
+}
+.osn3 {
+  top: 36.9vw;
+}
+.osn4 {
+  top: 48.2vw;
+}
+.osn5 {
+  top: 59.5vw;
+}
+.osn6 {
+  top: 70.7vw;
+}
+.osn7 {
+  top: 82.1vw;
+}
+.osn8 {
+  top: 93.6vw;
+}
+.kon {
+  top: 101vw;
+  width: 100vw;
+  height: 3vw;
+  background-color: #ff8400;
+  position: absolute;
+}
+/* Скрываем элементы по умолчанию */
+.orange1,
+.osn1,
+.orange2,
+.osn2,
+.orange3,
+.osn3,
+.orange4,
+.osn4,
+.orange5,
+.osn5,
+.orange6,
+.osn6,
+.orange7,
+.osn7,
+.orange8,
+.osn8 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Показываем элементы при добавлении класса visible */
+.orange1.visible,
+.osn1.visible,
+.orange2.visible,
+.osn2.visible,
+.orange3.visible,
+.osn3.visible,
+.orange4.visible,
+.osn4.visible,
+.orange5.visible,
+.osn5.visible,
+.orange6.visible,
+.osn6.visible,
+.orange7.visible,
+.osn7.visible,
+.orange8.visible,
+.osn8.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* 5 блок */
 .sec5 {
   width: 100vw;

@@ -100,3 +100,21 @@ const observer = new IntersectionObserver(
 // Наблюдаем за элементом
 const posl = document.querySelector('.posl');
 observer.observe(posl);
+// 7 секциииииия анимашка
+window.addEventListener('scroll', function () {
+  const elements = document.querySelectorAll(
+    '.orange1, .osn1, .orange2, .osn2, .orange3, .osn3, .orange4, .osn4, .orange5, .osn5, .orange6, .osn6, .orange7, .osn7, .orange8, .osn8'
+  );
+
+  elements.forEach((element, index) => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    // Проверяем, когда элемент попадает в область видимости
+    if (elementTop < windowHeight - 50) {
+      setTimeout(() => {
+        element.classList.add('visible');
+      }, index * 300); // Задержка для каждого элемента
+    }
+  });
+});
